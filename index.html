@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jam" id="jam"></div>
+    <table>
+      <tr>
+        <td class="displayOperator" colspan="4">
+          <h6 id="displayOperator"></h6>
+        </td>
+      </tr>
+      <tr>
+        <td class="display" colspan="4">
+          <h1 id="display">0</h1>
+        </td>
+      </tr>
+      <tr>
+        <td class="button__white" id="reset">AC</td>
+        <td class="button__white" id="hapus">&larr;</td>
+        <td class="button__white" onclick="operator('%')">%</td>
+        <td class="button__orange" onclick="operator('/')">÷</td>
+      </tr>
+      <tr id="barisPertama">
+        <td class="button" onclick="angka('7')">7</td>
+        <td class="button" onclick="angka('8')">8</td>
+        <td class="button" onclick="angka('9')">9</td>
+        <td class="button__orange" onclick="operator('*')">x</td>
+      </tr>
+      <tr id="barisKedua">
+        <td class="button" onclick="angka('4')">4</td>
+        <td class="button" onclick="angka('5')">5</td>
+        <td class="button" onclick="angka('6')">6</td>
+        <td class="button__orange" onclick="operator('-')">-</td>
+      </tr>
+      <tr id="barisKetiga">
+        <td class="button" onclick="angka('1')">1</td>
+        <td class="button" onclick="angka('2')">2</td>
+        <td class="button" onclick="angka('3')">3</td>
+        <td class="button__orange" onclick="operator('+')">+</td>
+      </tr>
+      <tr>
+        <td class="button" colspan="2" onclick="angka('0')">0</td>
+        <td class="button" onclick="angka('.')">.</td>
+        <td class="button__orange" onclick="hasil()">=</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
+<script src="./main.js"></script>
